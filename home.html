@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+    background-image: url(https://images.pexels.com/photos/6966/abstract-music-rock-bw.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+
+  }
+  
+h2{
+   font-size: 30px;
+}
+
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 30px;
+    color: rgb(255,255,255);
+  }
+  h5 {
+    margin: 10px 0 30px 0;
+       
+    font-size: 20px;
+    color: rgb(255,255,255);
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  
+  footer a {
+    color: rgb(255,255,255);
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body >
+  <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="home.html" class="w3-bar-item w3-button"><b>Unlimited</b> </a>
+    
+    <div class="w3-right w3-hide-small">
+      <a href="audio.html" class="w3-bar-item w3-button">Audio</a>
+      <a href="video.html" class="w3-bar-item w3-button">Video</a>
+    
+    </div>
+  </div>
+</div>
+
+
+
+<br><br>
+<center><h2 style="color: rgb(255,255,255);">Top 3 of the week!</h2></center><br><br>
+<iframe width="440" height="345" src="https://www.youtube.com/embed/tRgdAvFccIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="450" height="345" src="https://www.youtube.com/embed/KfUExOXxU5Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="450" height="345" src="https://www.youtube.com/embed/eYq7WapuDLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<h5>Hello every one .This is your entertainment time. So let's enjoy our time by listening to music and watching you tube videos.You can watch and download audio and video with free cost. Enjoy guys!</h5>
+<div class="main">
+  <div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center" style="color:rgb(255,255,255);"><em>We love our fans!</em></p>
+
+  <div class="row">
+    <div class="col-md-4" style="color: rgb(255,255,255);">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>No-45, York Street,Colombo-12, Sri Lanka</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +94 741234568</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: ailaa@gmail.com</p>
+      <p style="color: rgb(0,0,0);"><button onclick="getLocation()">Geo location</button>
+
+<p id="demo"></p>
+</p>
+
+    </div>
+  </div>
+  
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+   
+
+
+
+</body>
+</html>
